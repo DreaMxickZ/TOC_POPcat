@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <!-- <script src="main.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="main-page">
+        <h3>pop Link</h3>
+    </div> -->
+
+
+    <div class="pop-up-main">
+        <div class="pop-up-overlay"></div>
+        <div class="pop-up-content">
+           
+            <div class="text-head">
+                <h1>POP LING</h1>
+                <h4>Click to Select your team</h4>
+            </div>
+            <div class="select-here">
+                <div class="select-color">
+                    <div id="item-0">
+                        <div class="inactive-select">
+                            <div class="color-btn"></div>
+                        </div>
+                    </div>
+
+                    <div id="item-1">
+                        <div class="inactive-select">
+                            <div class="color-btn"></div>
+                        </div>
+                    </div>
+
+                    <div id="item-2">
+                        <div class="inactive-select">
+                            <div class="color-btn"></div>
+                        </div>
+                    </div>
+
+                    <div id="item-3">
+                        <div class="inactive-select">
+                            <div class="color-btn"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <div class="go-btn">
+                <button class="btn">GO!</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scoreboard-main">
+        <div class="scoreboard-box">
+                <div class="socreboard-content">
+
+                    <div class="title-score">
+                        <div class="ranking">
+                            <a>Ranking</a>
+                            
+                        </div>
+                        <div class="team">
+                            <a>Team</a>
+                            
+                        </div>
+                        <div class="score">
+                            <a>Score&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="title-score" style="margin-top: 10px;">
+                        <div class="ranking">
+                            <a>#1</a>
+                            
+                        </div>
+                        <div class="team">
+                            <div class="color"></div>
+                            <div class="text">Red</div>
+                            
+                            
+                        </div>
+                        <div class="score">
+                            <a>634,232,118,384</a>
+                        </div>
+                    </div>
+
+
+                    <div class="title-score" style="margin-top: 10px;">
+                        <div class="ranking">
+                            <a>#2</a>
+                            
+                        </div>
+                        <div class="team">
+                            <div class="color" style="background-color: greenyellow;"></div>
+                            <div class="text">Green</div>
+                            
+                            
+                        </div>
+                        <div class="score">
+                            <a>122,671,852,248</a>
+                        </div>
+                    </div>
+
+                    <div class="title-score" style="margin-top: 10px;">
+                        <div class="ranking">
+                            <a>#3</a>
+                            
+                        </div>
+                        <div class="team">
+                            <div class="color" style="background-color: yellow;"></div>
+                            <div class="text">Yellow</div>
+                            
+                            
+                        </div>
+                        <div class="score">
+                            <a>120,460,907,804</a>
+                        </div>
+                    </div>
+
+                    <div class="title-score" style="margin-top: 10px;">
+                        <div class="ranking">
+                            <a>#4</a>
+                            
+                        </div>
+                        <div class="team">
+                            <div class="color" style="background-color: blue;"></div>
+                            <div class="text">Blue</div>
+                            
+                            
+                        </div>
+                        <div class="score">
+                            <a>9,323,608,900</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+        </div>
+    </div>
+
+    <script>
+        let teamselect = null;
+
+        const bluecircle = document.getElementById('item-0');
+        const redcircle = document.getElementById('item-1');
+        const yellowcircle = document.getElementById('item-2');
+        const greencircle = document.getElementById('item-3');
+        const inactiveSelect_blue = document.querySelector('.inactive-select');
+        
+
+
+        const circleBtns = document.querySelectorAll(".inactive-select")
+        circleBtns.forEach((e) => {
+            e.addEventListener("click", ()=>{
+                const active = document.querySelector(".active-select")
+                if (active) {
+                    active.classList.remove("active-select")
+                }
+                e.classList.add("active-select")
+            })
+        })
+
+
+      
+        
+
+    </script>
+    
+</body>
+</html>
